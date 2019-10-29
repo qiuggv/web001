@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.myapp.springweb1.controller
+    title: ctg-myapp-springweb1 RESTful APIs
+    description: ctg-myapp-springweb1 RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.myapp.springweb1.controller
+        title: actg-myapp-springweb1 Open APIs
+        description: ctg-myapp-springweb1 Open API
+        version: 1.0.0-SNAPSHOT
